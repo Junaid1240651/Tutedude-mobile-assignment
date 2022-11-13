@@ -1,38 +1,665 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Playfair+Display&family=Poppins&family=Sacramento&family=Urbanist&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
 }
+.mobileView{
+  position: relative;
+width: 428px;
+height: 1380px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+background: #FFFFFF;
 }
+.tobBar{
+  position: absolute;
+width: 428px;
+height: 395px;
+left: 0px;
+top: 0px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+background: #FFFFFF;
 }
+.logoView{
+  position: absolute;
+width: 160px;
+height: 45px;
+left: 3px;
+top: 62px;
+}
+.logo{
+  position: absolute;
+width: 160px;
+height: 45px;
+left: 3px;
+/* top: 62px; */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+background: url(./images/logo.png);
+mix-blend-mode: normal;
+}
+.profileButtonView{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+position: absolute;
+width: 165px;
+height: 48px;
+left: 228px;
+top: 59px;
+
+background: #800080;
+border-radius: 10px;
+}
+.profileName{
+  width: 99px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.arrowView{
+  width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.profilearrow{
+  position: absolute;
+  width: 12px;
+  height: 7.41px;
+  margin-top: 8px;
+  margin-left: 6px;;
+
+}
+.refferAndEarnText{
+  position: absolute;
+width: 266px;
+height: 21px;
+left: 34px;
+top: 146px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+.goBackView{
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+position: absolute;
+width: 91px;
+height: 24px;
+left: 36px;
+top: 188px;
+}
+
+
+.YourRefferalCodeView{
+  position: absolute;
+width: 153px;
+height: 79px;
+left: 35px;
+top: 232px;
+
+}
+.YourRefferalCodeText{
+  position: absolute;
+width: 153px;
+height: 79px;
+/* top: 232px; */
+}
+.codeView{
+  box-sizing: border-box;
+
+position: absolute;
+width: 153px;
+height: 50px;
+/* left: 35px; */
+top: 28px;
+
+border: 1.5px solid #DFDFDF;
+border-radius: 10px;
+}
+.code{
+  position: absolute;
+width: 124px;
+height: 24px;
+left: 11px;
+top: 11px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+letter-spacing: 0.75em;
+
+color: #000000;
+
+}
+.dashboard{
+  position: absolute;
+width: 153px;
+height: 74px;
+left: 240px;
+top: 237px;
+
+background: #FFFFFF;
+box-shadow: 0px 2px 8px rgba(128, 0, 128, 0.15);
+border-radius: 20px;
+}
+.walletBalanceView{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 105px;
+height: 45px;
+left: 24px;
+top: 15px;
+}
+.walletBalance{
+  width: 105px;
+height: 21px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #800080;
+}
+.avilableBalance{
+  
+width: 45px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.friends{
+  position: absolute;
+width: 287px;
+height: 36px;
+left: 35px;
+top: 345px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height */
+
+
+color: #800080;
+}
+.card{
+  position: absolute;
+  width: 358px;
+  height: 228px;
+  left: 35px;
+  top: 401px;
+  
+  /* NEW GRADIENT 2 */
+  
+  background: linear-gradient(270deg, #800080 0%, #FF864C 100%);
+  border-radius: 20px;
+}
+.refferalAmountView{
+  position: absolute;
+width: 195px;
+height: 36px;
+left: 20px;
+top: 176px;
+}
+
+.refferalAmount{
+
+position: absolute;
+/* width: 130px; */
+height: 24px;
+/* left: 20px; */
+/* right: 0px; */
+top: 5px;
+margin: 0px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+.amount{
+  position: absolute;
+width: 55px;
+height: 36px;
+left: 139px;
+/* top: 176px; */
+margin: 0px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+}
+.javaView{
+  box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding-top: 3px;
+    padding-right: 9px;
+    padding-bottom: 4px;
+    padding-left: 7px;
+gap: 10px;
+align-items: center;
+position: absolute;
+width: 53px;
+height: 29px;
+left: 172px;
+top: 124px;
+
+border: 1.5px solid #EEAEAE;
+border-radius: 20px;
+}
+.java{
+  margin: 0px;
+width: 35px;
+height: 21px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.IllustratorView{
+  box-sizing: border-box;
+
+  /* Auto layout */
+text-align: center;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2px 8px;
+  gap: 10px;
+  
+  position: absolute;
+  width: 84px;
+  height: 29px;
+  left: 199px;
+  top: 85px;
+  
+  border: 1.5px solid #EEAEAE;
+  border-radius: 20px;
+}
+.Illustrator{
+  width: 66px;
+height: 21px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+/* line-height: 21px; */
+/* identical to box height */
+
+
+color: #FFFFFF;
+margin: 0px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}.mernView{
+  box-sizing: border-box;
+
+/* Auto layout */
+/* align-items: center;
+text-align: center; */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+/* padding: 4px 9px; */
+padding-top: 3px;
+    padding-right: 9px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+gap: 10px;
+
+position: absolute;
+width: 56px;
+height: 29px;
+left: 106px;
+top: 124px;
+
+border: 1.5px solid #EEAEAE;
+border-radius: 20px;
+}
+.mern{
+  
+width: 38px;
+height: 21px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+margin: 0px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.photoshopView{
+ 
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 9px;
+gap: 10px;
+
+position: absolute;
+width: 93px;
+height: 29px;
+left: 96px;
+top: 85px;
+
+border: 1.5px solid #EEAEAE;
+border-radius: 20px;
+}
+.photoshop{
+  width: 75px;
+  height: 21px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  
+  color: #FFFFFF;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.pythonView{
+  box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+/* padding: 4px 9px; */
+padding-top: 3px;
+    padding-right: 9px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+gap: 10px;
+
+position: absolute;
+width: 66px;
+height: 29px;
+left: 30px;
+top: 124px;
+
+border: 1.5px solid #EEAEAE;
+border-radius: 20px;
+}
+.python{
+  width: 48px;
+height: 21px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+text-align: center;
+line-height: 21px;
+/* identical to box height */
+
+margin: 0px;
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.uiuxView{
+  box-sizing: border-box;
+
+  /* Auto layout */
+  
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 4px 9px;
+  gap: 10px;
+  
+  position: absolute;
+  width: 56px;
+  height: 29px;
+  left: 30px;
+  top: 85px;
+  
+  border: 1.5px solid #EEAEAE;
+  border-radius: 20px;
+}
+.uiux{
+  width: 38px;
+  height: 21px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  
+  color: #FFFFFF;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.coursesEnrolled{
+  position: absolute;
+width: 141px;
+height: 21px;
+left: 20px;
+top: 54px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+margin: 0px;
+
+color: #FFFFFF;
+}
+.card1date{
+  position: absolute;
+width: 83px;
+height: 21px;
+left: 255px;
+top: 23px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+margin: 0px;
+
+color: #FFFFFF;
+}
+.card1name{
+
+  position: absolute;
+  width: 128px;
+  height: 24px;
+  left: 20px;
+  top: 20px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  
+  margin: 0px;
+  color: #FFFFFF;
+}
+.card2{
+  position: absolute;
+width: 358px;
+height: 228px;
+left: 35px;
+top: 649px;
+
+/* NEW GRADIENT 2 */
+
+background: linear-gradient(270deg, #800080 0%, #FF864C 100%);
+border-radius: 20px;
+}
+.card3{
+  position: absolute;
+  width: 358px;
+  height: 228px;
+  left: 35px;
+  top: 897px;
+
+/* NEW GRADIENT 2 */
+
+background: linear-gradient(270deg, #800080 0%, #FF864C 100%);
+border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.termAndCondition{
+  position: absolute;
+width: 159px;
+height: 24px;
+left: 35px;
+top: 1175px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #800080;
 }
